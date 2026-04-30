@@ -179,8 +179,8 @@ export default function BoltAIPage() {
           {/* Navigation */}
           <nav className="flex items-center justify-between px-5 md:px-11 py-4 md:py-[18px] max-w-[1280px] mx-auto">
             <Link href="/" className="flex items-center gap-2.5 font-bold text-[17px] text-white">
-              <span className="w-[36px] h-[36px] rounded-[12px] bg-white grid place-items-center flex-shrink-0">
-                <Zap className="w-[18px] h-[18px] text-[#111827] fill-[#111827]" />
+              <span className="w-[32px] h-[32px] rounded-[8px] bg-white grid place-items-center flex-shrink-0">
+                <Zap className="w-[17px] h-[17px] text-[#111827] fill-[#111827]" />
               </span>
               <span>Bolt AI</span>
             </Link>
@@ -343,7 +343,7 @@ export default function BoltAIPage() {
                 <button
                   key={index}
                   onClick={() => handleExampleClick(example)}
-                  className="bg-white/10 border border-white/30 backdrop-blur-xl text-white/95 px-5 py-3 rounded-[14px] text-[13px] font-medium text-center leading-snug hover:bg-white/20 hover:border-white/50 hover:text-white hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(0,0,0,0.20)] transition-all cursor-pointer"
+                  className="bg-white/10 border border-white/30 backdrop-blur-xl text-white/95 px-5 py-3 rounded-[14px] text-[12px] font-medium text-center leading-snug hover:bg-white/20 hover:border-white/50 hover:text-white hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(0,0,0,0.20)] transition-all cursor-pointer"
                 >
                   {example}
                 </button>
@@ -356,10 +356,10 @@ export default function BoltAIPage() {
       {/* FAQ Section */}
       <section className="py-14 md:py-20 px-4 md:px-6 max-w-[820px] mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-[28px] md:text-4xl font-bold mb-2.5 tracking-tight">
+          <h2 className="text-[32px] md:text-[48px] font-bold mb-2.5 tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-[15px]">Everything you need to know about BoltAI</p>
+          <p className="text-gray-500 text-[16px]">Everything you need to know about BoltAI</p>
         </div>
 
         <div className="space-y-2.5">
@@ -374,7 +374,7 @@ export default function BoltAIPage() {
             >
               <button
                 onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                className="w-full px-5 py-4 font-semibold text-[15px] flex justify-between items-center gap-4 text-left"
+                className="w-full px-5 py-4 font-semibold text-[16px] flex justify-between items-center gap-4 text-left"
               >
                 {item.question}
                 <ChevronDown
@@ -409,16 +409,16 @@ export default function BoltAIPage() {
           }}
         />
         <div className="relative max-w-[700px] mx-auto">
-          <h2 className="text-[28px] md:text-[40px] font-bold mb-4 tracking-tight">
+          <h2 className="text-[32px] md:text-[48px] font-bold mb-4 tracking-tight">
             Start building faster today
           </h2>
-          <p className="text-[15px] opacity-90 mb-8">
+          <p className="text-[20px] opacity-90 mb-8">
             Join 50,000+ designers and developers who are shipping products 10x faster with
             AI-powered design
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-3.5 rounded-full font-semibold text-[15px] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.22)] transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-3.5 rounded-full font-semibold text-[16px] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.22)] transition-all cursor-pointer"
           >
             Get Started for Free
             <ArrowRight className="w-4 h-4" />
@@ -431,8 +431,8 @@ export default function BoltAIPage() {
       <footer className="bg-[#0f172a] text-[#94a3b8] py-8 px-5 md:px-10">
         <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <Link href="/" className="flex items-center gap-2.5 font-bold text-[17px] text-[#e2e8f0]">
-            <span className="w-[36px] h-[36px] rounded-[12px] bg-white grid place-items-center flex-shrink-0">
-              <Zap className="w-[18px] h-[18px] text-[#111827] fill-[#111827]" />
+            <span className="w-[32px] h-[32px] rounded-[8px] bg-white grid place-items-center flex-shrink-0">
+              <Zap className="w-[17px] h-[17px] text-[#111827] fill-[#111827]" />
             </span>
             Bolt AI
           </Link>
