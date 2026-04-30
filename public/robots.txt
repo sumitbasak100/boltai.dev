@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /version-test/
+
+Sitemap: https://boltai.dev/sitemap.xml
