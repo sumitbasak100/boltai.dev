@@ -167,7 +167,7 @@ export default function BoltAIPage() {
           >
             <Clock className="w-[13px] h-[13px]" />
             <span>
-              BoltAI is not{" "}
+              BoltAI is now{" "}
               <strong className="text-emerald-400 font-semibold underline underline-offset-2">
                 Rapid.new
               </strong>{" "}
