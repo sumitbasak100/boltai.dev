@@ -186,24 +186,6 @@ export default function BoltAIPage() {
             </Link>
 
             <div className="flex items-center gap-7 text-sm font-medium">
-              <Link
-                href="/editor"
-                className="text-white/85 hover:text-white transition-colors hidden md:block"
-              >
-                My Editor
-              </Link>
-              <Link
-                href="/projects"
-                className="text-white/85 hover:text-white transition-colors hidden md:block"
-              >
-                My Projects
-              </Link>
-              <Link
-                href="/pricing"
-                className="text-white/85 hover:text-white transition-colors hidden md:block"
-              >
-                Pricing
-              </Link>
               <div className="flex items-center gap-2">
                 <a
                   href="https://rapid.new/?auth=login"
@@ -230,9 +212,7 @@ export default function BoltAIPage() {
             <h1 className="text-[36px] md:text-[58px] font-bold leading-[1.08] mb-5 tracking-tight">
               Design Amazing{" "}
               <span className="bg-gradient-to-r from-emerald-400 to-emerald-500 bg-clip-text text-transparent">
-                UIs and
-                <br />
-                Prototypes
+                UIs and Prototypes
               </span>{" "}
               with BoltAI
             </h1>
