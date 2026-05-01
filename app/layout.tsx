@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({
@@ -39,8 +38,6 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Bolt AI- AI Web App Designer',
-    // twitter:site_name is non-standard; Next.js exposes `site` for @handle.
-    // The raw tag is injected manually in <head> below.
     description:
       'BoltAI is a free AI Web App Builder that helps you transform your website ideas to web pages using AI.',
     images: [OG_IMAGE],
@@ -51,13 +48,13 @@ export const metadata: Metadata = {
     icon: [{ url: '/favicon.jpg', type: 'image/jpeg' }],
   },
 
-  // ─── Extra tags Next.js doesn't have first-class support for ──────────────
+  // ─── Extra tags Next.js doesn't expose via first-class API ────────────────
   other: {
-    // rel="image_src" (legacy share image tag)
+    // Legacy share image tag (rel="image_src")
     image_src: OG_IMAGE,
-    // AJAX crawling fragment hint (legacy but preserved from original)
+    // AJAX crawling fragment hint (preserved from original Bubble site)
     fragment: '!',
-    // twitter:site_name (non-standard, injected as <meta> via `other`)
+    // twitter:site_name is non-standard; injected here as a raw meta tag
     'twitter:site_name': 'Bolt AI',
   },
 }
@@ -70,23 +67,23 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className} bg-[#f5f7fa]`}>
       <head>
-        {/* IE compatibility ─ Next.js Metadata API doesn't expose http-equiv directly */}
+        {/* IE compatibility ─ not exposed by Next.js Metadata API */}
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        {/* ── Google Analytics 4 ──────────────────────────────────────────────
-            IMPORTANT: Keep ID G-NRXCC6HWBC exactly.
-            Do NOT create a new GA4 property — this would break historical data.
-            Placement: <head> as required by the SEO preservation doc.
+        {/* ── Google Analytics 4 ─────────────────────────────────────────────
+            Placed as raw inline scripts so GA fires directly from <head>,
+            exactly as the SEO preservation doc requires.
+            KEEP ID G-NRXCC6HWBC — do NOT create a new GA4 property.
         ───────────────────────────────────────────────────────────────────── */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-NRXCC6HWBC"
-          strategy="afterInteractive"
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRXCC6HWBC" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NRXCC6HWBC');`,
+          }}
         />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NRXCC6HWBC');`}
-        </Script>
 
-        {/* ── WebSite Schema (JSON-LD) ─────────────────────────────────────── */}
+        {/* ── WebSite Schema (JSON-LD) ────────────────────────────────────── */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -106,7 +103,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* ── FAQPage Schema (JSON-LD) — enables rich FAQ snippets in Google ─ */}
+        {/* ── FAQPage Schema (JSON-LD) ─ enables rich FAQ snippets in Google ─ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
