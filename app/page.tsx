@@ -408,35 +408,54 @@ export default function BoltAIPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0f172a] text-[#94a3b8] py-8 px-5 md:px-10">
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <Link href="/" className="flex items-center gap-2.5 font-bold text-[17px] text-[#e2e8f0]">
-            <span className="w-[32px] h-[32px] rounded-[8px] bg-white grid place-items-center flex-shrink-0">
-              <Zap className="w-[17px] h-[17px] text-[#111827] fill-[#111827]" />
-            </span>
-            Bolt AI
-          </Link>
-          <div className="flex gap-7 text-sm">
-            <Link href="/" className="hover:text-[#e2e8f0] transition-colors">
-              Home
+      <footer className="bg-[#0f172a] text-[#94a3b8] py-12 px-5 md:px-10">
+        <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 pb-8 border-b border-[#1e293b]">
+      
+          {/* Col 1 — Logo + Copyright */}
+          <div className="flex flex-col gap-4">
+            <Link href="/" className="flex items-center gap-2.5 font-bold text-[17px] text-[#e2e8f0]">
+              <span className="w-[32px] h-[32px] rounded-[8px] bg-white grid place-items-center flex-shrink-0">
+                <Zap className="w-[17px] h-[17px] text-[#111827] fill-[#111827]" />
+              </span>
+              Bolt AI
             </Link>
-            <Link href="/about" className="hover:text-[#e2e8f0] transition-colors">
-              About
+            <p className="text-[13px] text-[#64748b] leading-relaxed max-w-[220px]">
+              Supercharge your workflow with AI-powered tools built for speed.
+            </p>
+            <p className="text-[13px] text-[#64748b] mt-auto">
+              © 2026 Bolt AI. All rights reserved.
+            </p>
+          </div>
+      
+          {/* Col 2 — Other Sites */}
+          <div className="flex flex-col gap-3">
+            <h4 className="text-[13px] font-semibold uppercase tracking-widest text-[#475569] mb-1">
+              Other Sites
+            </h4>
+            <Link href="https://onlinewhiteboard.co" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              Onlinewhiteboard.co
             </Link>
-            <Link href="/privacy" className="hover:text-[#e2e8f0] transition-colors">
-              Privacy
+            <Link href="https://faqtemplates.co" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              FAQtemplates.co
             </Link>
-            <Link href="/terms" className="hover:text-[#e2e8f0] transition-colors">
-              Terms
-            </Link>
-            <Link href="/contact" className="hover:text-[#e2e8f0] transition-colors">
-              Contact
+            <Link href="https://ezgrader.co" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              Ezgrader.co
             </Link>
           </div>
+      
+          {/* Col 3 — Navigation */}
+          <div className="flex flex-col gap-3">
+            <h4 className="text-[13px] font-semibold uppercase tracking-widest text-[#475569] mb-1">
+              Navigation
+            </h4>
+            <Link href="/" className="text-sm hover:text-[#e2e8f0] transition-colors">Home</Link>
+            <Link href="/about" className="text-sm hover:text-[#e2e8f0] transition-colors">About</Link>
+            <Link href="/privacy" className="text-sm hover:text-[#e2e8f0] transition-colors">Privacy</Link>
+            <Link href="/terms" className="text-sm hover:text-[#e2e8f0] transition-colors">Terms</Link>
+            <Link href="/contact" className="text-sm hover:text-[#e2e8f0] transition-colors">Contact</Link>
+          </div>
+      
         </div>
-        <p className="max-w-[1280px] mx-auto mt-5 pt-5 border-t border-[#1e293b] text-center text-[13px] text-[#64748b]">
-          2026 Bolt AI. All rights reserved.
-        </p>
       </footer>
 
       {/* Shake animation */}
