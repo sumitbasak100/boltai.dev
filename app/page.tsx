@@ -448,7 +448,6 @@ export default function BoltAIPage() {
             <h4 className="text-[13px] font-semibold uppercase tracking-widest text-[#475569] mb-1">
               Navigation
             </h4>
-            <Link href="/" className="text-sm hover:text-[#e2e8f0] transition-colors">Home</Link>
             <Link href="/about" className="text-sm hover:text-[#e2e8f0] transition-colors">About</Link>
             <Link href="/privacy" className="text-sm hover:text-[#e2e8f0] transition-colors">Privacy</Link>
             <Link href="/terms" className="text-sm hover:text-[#e2e8f0] transition-colors">Terms</Link>
