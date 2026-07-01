@@ -441,6 +441,9 @@ export default function BoltAIPage() {
             <Link href="https://ezgrader.co" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
               Ezgrader.co
             </Link>
+            <Link href="https://anniversarygiftsbyyear.co/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              AnniversaryGiftsByYear.co
+            </Link>
           </div>
       
           {/* Col 3 — Navigation */}
