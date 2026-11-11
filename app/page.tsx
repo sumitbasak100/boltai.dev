@@ -444,6 +444,15 @@ export default function BoltAIPage() {
             <Link href="https://anniversarygiftsbyyear.co/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
               AnniversaryGiftsByYear.co
             </Link>
+            <Link href="https://collegeessaygrader.ai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              CollegeEssayGrader.ai
+            </Link>
+            <Link href="https://apushscorecalculator.co/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              APUSHscoreCalculator.co
+            </Link>
+            <Link href="https://finalgradecalculator.io/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              FinalGradeCalculator.io
+            </Link>
           </div>
       
           {/* Col 3 — Navigation */}
