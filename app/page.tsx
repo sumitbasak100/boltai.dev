@@ -453,6 +453,9 @@ export default function BoltAIPage() {
             <Link href="https://finalgradecalculator.io/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
               FinalGradeCalculator.io
             </Link>
+            <Link href="https://trendingbirthdays.com/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#e2e8f0] transition-colors">
+              TrendingBirthdays.com
+            </Link>
           </div>
       
           {/* Col 3 — Navigation */}
